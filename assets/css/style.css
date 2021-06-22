@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+/* Color schema */
+:root {
+  --primary-color: #92cccd;
+  --secondary-color: #31343d;
+  --tertiary: #465a74;
+}
+/* global css here */
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 46px;
+}
+h3 {
+  font-size: 36px;
+}
+/* Header css here */
+header {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px 15px 0px;
+}
+header h1 {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding-left: 50px;
+}
+header ul {
+  padding-right: 50px;
+  margin-top: 10px;
+}
+header ul li {
+  list-style-type: none;
+  display: inline;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 10px;
+  font-size: 18px;
+}
+/* hero/main css here */
+.hero {
+  background-image: url("../images/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+}
+.hero h3 {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+/* about me css here */
