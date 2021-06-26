@@ -78,7 +78,9 @@ header ul li a {
 }
 
 /* about me css here */
-.aboutme {
+.aboutme,
+.work,
+.contact {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -95,15 +97,6 @@ header ul li a {
 }
 
 /* work css here  */
-.work {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
-  flex-direction: row;
-}
-
 .main {
   flex: 80%;
   padding: 0px 0px 10px 30px;
@@ -151,7 +144,6 @@ header ul li a {
 .third-project-row #runBuddy {
   margin-right: 0px;
 }
-
 .project-container,
 .main-project {
   transition: all 200ms cubic-bezier(0.6, 0.04, 0.98, 0.335); /* easeInCirc */
@@ -167,7 +159,9 @@ header ul li a {
   border: 3px solid black;
   transform: scale(1.05);
 }
-
+.project-img-link {
+  width: 49%;
+}
 #runBuddy {
   background-image: url(../images/run-buddy.jpg);
   background-size: cover;
@@ -175,15 +169,6 @@ header ul li a {
   background-blend-mode: multiply;
 }
 /* contact css here */
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
-  flex-direction: row;
-}
-
 .contact-links {
   display: flex;
   justify-content: space-around;
@@ -195,6 +180,11 @@ header ul li a {
   border-bottom: 3px solid var(--secondary-color);
   padding: 10px;
   font-size: 22px;
+}
+.contact-links div a:hover {
+  text-decoration: underline;
+  pointer-events: cursor;
+  opacity: 0.5;
 }
 /* Footer css here */
 footer {
@@ -255,9 +245,11 @@ footer {
     flex-direction: column;
     margin-top: 0px;
   }
+  .contact-links div {
+    margin-top: 20px;
+  }
   .contact-links a {
     border-bottom: none;
-    padding: 10px;
   }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
