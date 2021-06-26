@@ -156,15 +156,18 @@ header ul li a {
     0.98,
     0.335
   ); /* easeInCirc */
+  opacity: 0.8;
 }
 .project-container:hover,
 .main-project:hover {
   border: 3px solid black;
   transform: scale(1.05);
+  opacity: 1;
 }
 .project-img-link {
   width: 49%;
 }
+
 #mainProject,
 #ledWall,
 #calculator,
@@ -175,6 +178,7 @@ header ul li a {
   background-blend-mode: multiply;
   background-position: center;
 }
+
 #mainProject {
   background-image: url(../images/placeholder.png);
 }
