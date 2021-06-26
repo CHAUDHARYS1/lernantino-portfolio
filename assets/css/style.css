@@ -101,6 +101,9 @@ header ul li a {
   flex: 80%;
   padding: 0px 0px 10px 30px;
 }
+.main a {
+  color: var(--secondary-color);
+}
 .main-project {
   background-color: white;
   height: 400px;
@@ -162,11 +165,30 @@ header ul li a {
 .project-img-link {
   width: 49%;
 }
+#mainProject,
+#ledWall,
+#calculator,
+#pastelPuzzels,
 #runBuddy {
-  background-image: url(../images/run-buddy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
+  background-position: center;
+}
+#mainProject {
+  background-image: url(../images/placeholder.png);
+}
+#ledWall {
+  background-image: url(../images/placeholder.png);
+}
+#calculator {
+  background-image: url(../images/placeholder.png);
+}
+#pastelPuzzels {
+  background-image: url(../images/placeholder.png);
+}
+#runBuddy {
+  background-image: url(../images/run-buddy.jpg);
 }
 /* contact css here */
 .contact-links {
