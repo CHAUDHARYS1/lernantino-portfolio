@@ -196,6 +196,15 @@ header ul li a {
   padding: 10px;
   font-size: 22px;
 }
+/* Footer css here */
+footer {
+  background: var(--primary-color);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
 /* Responsive starts here */
 @media screen and (max-width: 1200px) {
   .section-title {
@@ -212,6 +221,7 @@ header ul li a {
   .main {
     flex: none;
     padding: 0px 0px 0px 0px;
+    margin-top: 30px;
   }
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -233,6 +243,21 @@ header ul li a {
   }
   header ul li {
     padding: 0px 5px 0px 5px;
+  }
+
+  .contact {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .contact-links a {
+    border-bottom: none;
+    padding: 10px;
   }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
